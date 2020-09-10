@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  height: calc(100vh - 6em);
+  padding: 3em;
+  flex-direction: column;
+  background: #ecedf1;
+}
+
+.App-Header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 65px;
+  z-index: 100;
+
+  &-modalWrapper {
+    position: relative;
+  }
+
+  .toggle-events,
+  .schedule-events {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .toggle-events {
+    margin-right: 0.5em;
+  }
+  .schedule-events {
+    margin-left: 0.5em;
+  }
+}

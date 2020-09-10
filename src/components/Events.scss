@@ -1,0 +1,83 @@
+.Events {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: #fff;
+  width: 400px;
+  max-height: 600px;
+  overflow: auto;
+  border-radius: 3px;
+  box-shadow: 0px 3px 7px -1px rgba(0, 0, 0, 0.35);
+  padding: 10px;
+
+  &__Title {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  &__Day {
+    display: flex;
+    align-items: flex-start;
+
+    &-Date {
+      font-weight: 600;
+      font-size: 14px;
+      width: 80px;
+    }
+
+    &-List {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      flex: 1 1;
+    }
+
+    &-ListItem {
+      font-size: 14px;
+      color: #565656;
+      margin-bottom: 20px;
+      border-left: 1px solid #efefef;
+      padding-left: 10px;
+      margin-left: 10px;
+
+      &-title {
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      &-description {
+        margin-bottom: 5px;
+      }
+
+      &-time {
+        margin-bottom: 5px;
+      }
+
+      &-participants {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      &-participant {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+      &-zoom {
+        color: #017eff;
+      }
+    }
+  }
+}
